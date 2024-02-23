@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <ctype.h>
 /**
  * main - Start of the program
  *
@@ -6,11 +9,13 @@
  */
 int main(void)
 {
-	char: a;
-	for(a = 0; a < 10; a++)
+	int a;
+
+	for (a = 0; a < 10; a++)
 	{
-	putchar('\n')
-	return (0);
+		printf("%d", a);
 	}
-	
+	printf('\n');
+
+	return (0);
 }
