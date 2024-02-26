@@ -1,10 +1,11 @@
-#include <main.h>
+#include "main.h"
 /**
  * main - Start of the program
  *
  * Return: 0
  */
 int main(void)
+	char _puchar(char c);
 {
 	_putchar('_');
 	_putchar('p');
