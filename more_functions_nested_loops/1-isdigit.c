@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * main - Start of the program
- *
- * Return: 0]
+ * _isdigit - isdigit
+ *@c: LOL
+ * Return: 0
  */
 int _isdigit(int c)
 {
