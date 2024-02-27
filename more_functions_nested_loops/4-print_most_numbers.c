@@ -12,10 +12,11 @@ int x = '2';
 
 	for (c = '0'; c <= '9'; c++)
 
-	if (i != '2' && x != '4')
+	if (!= 'i' && != 'x')
 
 		{
 		_putchar(c);
-		_putchar('\n');
 		}
+		_putchar('\n');
+		
 }
