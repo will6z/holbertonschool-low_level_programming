@@ -3,7 +3,7 @@
 /**
  * _abs - absolute value of int
  * @n: int
- * Return: 0 
+ * Return: 0
  */
 int _abs(int n)
 {
