@@ -3,43 +3,46 @@
 #include <stdio.h>
 /**
  * str_concat - concatenties two strings
- * @s1: input
- * @s2: input
+ * @s1: char
+ * @s2: char
  * Return: 0
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j = 0, k = 0, l = 0;
-	char *s;
+	char *s3;
+	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-	while (s1[i])
-		j++;
+	while (s1 && s1[len1])
+		len1++;
+	while (s2 && s2[len2])
+		len2++;
 
-	l = i + j;
-	s = malloc((sizeof(char) * l) + 1);
-
-	if (s == NULL)
+	s3 = malloc(sizeof(char) * (len1 + len2 + 1));
+	if (s3 == NULL)
 		return (NULL);
 
+	i = 0;
 	j = 0;
 
-	while (k < l)
+	if (s1)
 	{
-		if (k <= i)
-			s[k] = s1[k];
-
-		if (k >= i)
-	{
-		s[k] = s2[j];
-		j++;
+		while (i < len1)
+		{
+			s3[i] = s1[i];
+			i++;
+		}
 	}
 
-	k++;
-}
-s[k] = '\0';
-return (s);
+	if (s2)
+	{
+		while (i < (len1 + len2))
+		{
+			s3[i] = s2[j];
+			i++;
+			j++;
+		}
+	}
+	s3[i] = '\0';
+
+	return (s3);
 }
