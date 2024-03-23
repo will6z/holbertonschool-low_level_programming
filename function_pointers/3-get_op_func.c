@@ -1,8 +1,9 @@
 #include "3-calc.h"
-#include <stdlib.h>
+#include <string.h>
 /**
- * get_op_func - selects function
+ * get_op_func - func
  * @s: input
+ *
  * Return: 0
  */
 int (*get_op_func(char *s))(int, int)
