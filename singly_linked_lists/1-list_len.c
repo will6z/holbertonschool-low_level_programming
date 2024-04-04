@@ -1,10 +1,9 @@
 #include "lists.h"
-#include <stddef.h>
 
 /**
- * list_len -  length of the list
- * @h: input
- * Return: 0
+ *list_len - Returns the number of elements in a linked list
+ *@h: Pointer to the head of list
+ *Return: The number of elements in the list
  */
 size_t list_len(const list_t *h)
 {
@@ -15,5 +14,7 @@ size_t list_len(const list_t *h)
 		count++;
 		h = h->next;
 	}
+
 	return (count);
 }
+
