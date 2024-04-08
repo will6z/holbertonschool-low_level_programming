@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  * print_dlistint - function
  * @h: input
@@ -6,14 +7,12 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	const dlistint_t *current = h;
-	size_t node_count = 0;
+	size_t i;
 
-	while (current != NULL)
+	for (i = 0; h != NULL; i++)
 	{
-		node_count++;
-		current = current->next;
+		printf("%d\n", h->n);
+		h = h->next;
 	}
-
-	return (node_count);
+	return (i);
 }
